@@ -22,8 +22,7 @@ namespace GoodGame
             fullName = firstName + " " + lastName;
             Console.WriteLine(fullName);
 
-            Console.ReadKey(true);
-
+            Console.WriteLine("---------Hud---------");
             int life; // create an interger variable named, "score"
             life = 3;
             
@@ -42,24 +41,32 @@ namespace GoodGame
             Console.WriteLine(score); // accessing a variable
 
             Console.ReadKey(true);
+            Console.WriteLine("---------Action---------");
             Console.WriteLine("You got a kill");
             Console.ReadKey(true);
-
+            Console.WriteLine("---------Hud---------");
+            Console.WriteLine("life"); // NOT accessing a variable
+            life = life + 0; //stomped an enemy for 100 points 
+            Console.WriteLine(life); // accessing a variable
             Console.WriteLine("score");
             score = score + 100; //stomped an enemy for 100 points
             Console.WriteLine(score);
-
+            Console.WriteLine("---------Action---------");
             Console.ReadKey(true);
             Console.WriteLine("You got 5 kills");
             Console.ReadKey(true);
-
+            Console.WriteLine("---------Hud---------");
+            Console.WriteLine("life"); // NOT accessing a variable
+            life = life + 0; //stomped an enemy for 100 points 
+            Console.WriteLine(life); // accessing a variable
             Console.WriteLine("score");
             score = score + 500; //stomped an enemy for 100 points
             Console.WriteLine(score);
             Console.ReadKey(true);
-
+            Console.WriteLine("---------Action---------");
             Console.WriteLine("You were hit by a bus");
             Console.ReadKey(true);
+            Console.WriteLine("---------Hud---------");
             Console.WriteLine("life");
             life = life - 1; //stomped an enemy for 100 points
             Console.WriteLine(life);
@@ -67,7 +74,7 @@ namespace GoodGame
             score = score - 126; //stomped an enemy for 100 points
             Console.WriteLine(score);
             Console.ReadKey(true);
-
+            Console.WriteLine("---------Action---------");
             Console.WriteLine("You then get up off the dirt and make for home in your car");
             Console.ReadKey(true);
 
